@@ -1,0 +1,23 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<div class="container">
+    <div class="input-group">
+        <input [(ngModel)]="strSearch" type="text" class="form-control" />
+        <span class="input-group-addon">
+            <i class="glyphicon glyphicon-search"></i>
+        </span>
+    </div>
+    <br>
+    <ul>
+        <li *ngFor="let m of (movies | async)">
+            <div class="moviecontent" [routerLink]="['/', 'movie-details', m.imdbID]">
+                <img [src]="m.Poster">
+                <p>{{ m.Title }}</p>
+            </div>
+            <hr>
+        </li>
+    </ul>
+</div>

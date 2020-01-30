@@ -1,0 +1,32 @@
+:host{
+    display: block;
+}
+input{
+    text-align: center;
+}
+
+img{
+    width: auto;
+    height: auto;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    background: #B0B0B0;
+}
+li p{
+    margin: 0 auto;
+    font-family: Arial;
+    font-style: oblique;
+    font-size: 24px;
+}
+.container{
+    padding: 10px;
+    background: #E2E2E2;
+}
+.moviecontent{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,20 @@
+<div class="detail-content">
+        <img class="backicon" (click)="backClicked()" src="https://image.flaticon.com/icons/png/512/60/60577.png">
+    <div class="header">
+        <h1>{{ movieInfo?.Title }}</h1>
+
+        <img [src]="movieInfo?.Poster"><br><br>
+
+        <h4>{{ movieInfo?.Plot }}</h4>
+    </div><br>
+    <div class="rscontent">
+        <div class="rating">
+            <img class="favicon" src="http://cdn.onlinewebfonts.com/svg/img_121918.png">
+            &nbsp;<p>{{ movieInfo?.imdbRating }}</p>
+        </div>
+        <div class="actors">
+            <p><b>Cast:</b>&nbsp;{{ movieInfo?.Actors }}</p>
+        </div>
+    </div>
+
+</div>
