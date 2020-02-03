@@ -15,10 +15,11 @@ export class MoviesComponent implements OnInit {
 
   ////Atts
 
-  movies: Observable<any>;
-  type: MovieType = MovieType.all;
   private _strSearch: string = '';
   private timer: any;
+
+  movies: Observable<any>;
+  type: MovieType = MovieType.all;
 
   ////Builder
 
@@ -36,8 +37,6 @@ export class MoviesComponent implements OnInit {
       this._strSearch = queryParams['search'];
       this.searchMovie();
     });
-
-
   }
 
   ////Methods
@@ -51,7 +50,6 @@ export class MoviesComponent implements OnInit {
     this.timer = setTimeout(() => this.navigate(), 1000);
     this._strSearch = value;
     console.log(value)
-
   }
 
   navigate() {

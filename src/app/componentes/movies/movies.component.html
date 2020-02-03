@@ -13,7 +13,7 @@
     <br>
     <ul>
         <li #moviecontent *ngFor="let m of (movies | async)">
-            <div class="moviecontent" [routerLink]="['/', 'movie-details', m.imdbID]">
+            <div class="moviecontent" [routerLink]="['/movie-details', m.imdbID]">
                 <img [src]="m.Poster">
                 <p>{{ m.Title }}</p>
             </div>
