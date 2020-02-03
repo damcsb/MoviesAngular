@@ -1,30 +1,36 @@
-.detail-content{
-    margin: 100px;
-    background: #E2E2E2;
-    padding: 5px;
-}
-.favicon{
-    width: 30px;
-    height: 30px;
-}
-.header{
-    text-align: center;
-}
-.rscontent {
-    display: flex;
-    justify-content: space-between;
-}
-.rating{
-    display: flex;
-    align-items: center;
-    width: auto;
-}
 .actors{
     display: flex;
     align-items: center;
     align-items: flex-end;
 }
+
 .backicon{
     width: 30px;
     height: 30px;
+}
+
+.detail-content{
+    margin: 100px;
+    background: #E2E2E2;
+    padding: 5px;
+}
+
+.favicon{
+    width: 30px;
+    height: 30px;
+}
+
+.header{
+    text-align: center;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.rscontent {
+    display: flex;
+    justify-content: space-between;
 }

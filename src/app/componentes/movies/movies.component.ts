@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { MovieService } from '../../service/movie.service';
 import { MovieType } from '../../service/movie';
 import { Observable } from 'rxjs';
@@ -17,13 +17,16 @@ export class MoviesComponent implements OnInit {
 
   movies: Observable<any>;
   type: MovieType = MovieType.all;
+  private _strSearch: string = '';
+  private timer: any;
 
   ////Builder
 
   constructor(
     private movieService: MovieService,
     private route: ActivatedRoute,
-    private router: Router) { }
+    private router: Router,
+    ) { }
 
   ////Implements
 
@@ -33,12 +36,11 @@ export class MoviesComponent implements OnInit {
       this._strSearch = queryParams['search'];
       this.searchMovie();
     });
+
+
   }
 
   ////Methods
-
-  private _strSearch: string = '';
-  private timer: any;
 
   get strSearch() {
     return this._strSearch;

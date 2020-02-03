@@ -1,32 +1,40 @@
 :host{
     display: block;
 }
+
+.container{
+    background: #E2E2E2;
+    padding: 10px;
+}
+
+img{
+    height: auto;
+    width: auto;
+}
+
 input{
     text-align: center;
 }
 
-img{
-    width: auto;
-    height: auto;
+li{
+    background: #B0B0B0;
+    list-style: none;
+    padding: 5px;
+    text-decoration: none;
 }
 
-li{
-    list-style: none;
-    text-decoration: none;
-    padding: 5px;
-    background: #B0B0B0;
-}
 li p{
-    margin: 0 auto;
     font-family: Arial;
-    font-style: oblique;
     font-size: 24px;
+    font-style: oblique;
+    margin: 0 auto;
+
 }
-.container{
-    padding: 10px;
-    background: #E2E2E2;
-}
+
 .moviecontent{
-    display: flex;
     align-items: center;
+    display: flex;
 }
+
+
+
