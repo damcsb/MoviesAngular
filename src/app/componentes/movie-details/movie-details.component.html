@@ -1,5 +1,5 @@
 <div class="detail-content">
-    <img class="backicon" (click)="backClicked()" src="https://image.flaticon.com/icons/png/512/60/60577.png">
+    <img class="backicon" (click)="backClicked()" src="../../../assets//backarrow.png">
 
     <div class="header">
         <h1>{{ movieInfo?.Title }}</h1>
@@ -10,14 +10,17 @@
     </div><br>
     <div class="rscontent">
         <div class="rating">
-            <img class="favicon" src="http://cdn.onlinewebfonts.com/svg/img_121918.png">
+            <img class="favicon" src="https://cdn.pixabay.com/photo/2013/07/12/17/17/star-151958_960_720.png">
             &nbsp;<p>{{ movieInfo?.imdbRating }}</p>
         </div>
         <div class="actors">
             <p><b>Cast:</b>&nbsp;{{ movieInfo?.Actors }}</p>
         </div>
     </div>
-    <div class="btnLike">
+
+    <!-- BUTTON LIKE AND DISLIKE TEST -->
+
+    <!-- <div class="btnLike">
         <div class="ViewLike" #like>
             <img class="like" (click)="exampleLike()" src="https://image.flaticon.com/icons/png/512/126/126473.png">
             <p>{{ numberlike }}</p>
@@ -26,6 +29,6 @@
             <img class="dislike" (click)="exampleDislike()" src="https://pngimg.com/uploads/dislike/dislike_PNG60.png">
             <p>{{ numberdislike }}</p>
         </div>
-    </div>
+    </div> -->
 
 </div>

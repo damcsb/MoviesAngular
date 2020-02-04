@@ -5,8 +5,23 @@
 }
 
 .container{
-    background: #E2E2E2;
+    background: rgb(61, 61, 61);
     padding: 10px;
+    color: white;
+}
+
+.list-movies {
+    background: rgb(70, 70, 70);;
+    list-style: none;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.list-movies p{
+    font-family: Arial;
+    font-size: 24px;
+    font-style: oblique;
+    margin: 0 auto;
 }
 
 .poster-img{
@@ -14,29 +29,11 @@
     width: auto;
 }
 
-input{
+.search-model{
     text-align: center;
-}
-
-li{
-    background: #B0B0B0;
-    list-style: none;
-    padding: 5px;
-    text-decoration: none;
-}
-
-li p{
-    font-family: Arial;
-    font-size: 24px;
-    font-style: oblique;
-    margin: 0 auto;
-
 }
 
 .moviecontent{
     align-items: center;
     display: flex;
 }
-
-
-

@@ -45,33 +45,33 @@ export class MovieDetailsComponent implements OnInit {
 
   ///////////////////////////////Renderer button Like/Dislike Test
 
-  @ViewChild('like', { static: true }) like: ElementRef;
-  @ViewChild('dislike', { static: true }) dislike: ElementRef;
+  // @ViewChild('like', { static: true }) like: ElementRef;
+  // @ViewChild('dislike', { static: true }) dislike: ElementRef;
 
-  numberlike: any = localStorage.getItem('Like');
-  numberdislike: any = localStorage.getItem('Dislike');
-  unclick: boolean = false;
+  // numberlike: any = localStorage.getItem('Like');
+  // numberdislike: any = localStorage.getItem('Dislike');
+  // unclick: boolean = false;
 
-  exampleLike() {
-    this.renderer.setStyle(this.like.nativeElement, 'background', '#9FE49E');
-    this.renderer.setStyle(this.dislike.nativeElement, 'display', 'none');
+  // exampleLike() {
+  //   this.renderer.setStyle(this.like.nativeElement, 'background', '#9FE49E');
+  //   this.renderer.setStyle(this.dislike.nativeElement, 'display', 'none');
 
-    if (this.unclick == false) {
-      this.numberlike++;
-      localStorage.setItem("Like", this.numberlike);
-      this.unclick = true;
-    }
-  }
+  //   if (this.unclick == false) {
+  //     this.numberlike++;
+  //     localStorage.setItem("Like", this.numberlike);
+  //     this.unclick = true;
+  //   }
+  // }
 
-  exampleDislike() {
-    this.renderer.setStyle(this.dislike.nativeElement, 'background', '#E49E9E');
-    this.renderer.setStyle(this.like.nativeElement, 'display', 'none');
+  // exampleDislike() {
+  //   this.renderer.setStyle(this.dislike.nativeElement, 'background', '#E49E9E');
+  //   this.renderer.setStyle(this.like.nativeElement, 'display', 'none');
 
-    if (this.unclick == false) {
-      this.numberdislike++;
-      localStorage.setItem("Dislike", this.numberdislike);
-      this.unclick = true;
-    }
-  }
+  //   if (this.unclick == false) {
+  //     this.numberdislike++;
+  //     localStorage.setItem("Dislike", this.numberdislike);
+  //     this.unclick = true;
+  //   }
+  // }
 
 }

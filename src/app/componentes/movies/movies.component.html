@@ -5,14 +5,14 @@
 
 <div class="container">
     <div class="input-group">
-        <input [(ngModel)]="strSearch" type="text" class="form-control" />
+        <input #searchbar class="search-model" [(ngModel)]="strSearch" type="text" class="form-control" />
         <span class="input-group-addon">
             <i class="glyphicon glyphicon-search"></i>
         </span>
     </div>
     <br>
     <ul>
-        <li #moviecontent *ngFor="let m of (movies)">
+        <li class="list-movies" #moviecontent *ngFor="let m of (movies)">
             <div class="moviecontent" [routerLink]="['/movie-details', m.imdbID]">
                 <img class="poster-img" [src]="m?.Poster">
                 <p>{{ m.Title }}</p>

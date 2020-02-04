@@ -18,7 +18,6 @@ export class MoviesComponent implements OnInit {
 
   private _strSearch: string = '';
   private timer: any;
-
   movies: Observable<any>;
   type: MovieType = MovieType.all;
 
@@ -64,7 +63,6 @@ export class MoviesComponent implements OnInit {
       this.movies = res;
       setTimeout(() => {
         this.elementref.nativeElement.scrollTop = this.movieScrollService.scrollPosition;
-
       })
       console.log("Scroll guardado de vuelta: ", this.movieScrollService.scrollPosition)
     })

@@ -1,5 +1,7 @@
 :host{
     display: block;
+    width: 100vw;
+    height: 100vh;
 }
 
 .actors{
@@ -8,8 +10,8 @@
 }
 
 .backicon{
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 60px;
 }
 
 .btnLike{
@@ -27,7 +29,8 @@
 }
 
 .detail-content{
-    background: #E2E2E2;
+    background: rgb(61, 61, 61);
+    color: white;
     margin: 100px;
     padding: 5px;
 }
