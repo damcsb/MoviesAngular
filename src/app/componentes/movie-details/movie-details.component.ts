@@ -27,17 +27,14 @@ export class MovieDetailsComponent implements OnInit {
   ////Implements
 
   ngOnInit() {
-    
-    const id = this.activatedRoute.snapshot.paramMap.get('id');
-    console.log(id);
 
+    const id = this.activatedRoute.snapshot.paramMap.get('id');
     this.movieService.getDetails(id).subscribe(
       data => {
         this.movieInfo = data
-        console.log(data);
       }
     );
-    console.log(this.movieInfo);
+    
   }
 
   ////Methods

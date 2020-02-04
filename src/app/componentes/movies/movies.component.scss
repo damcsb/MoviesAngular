@@ -1,5 +1,7 @@
 :host{
     display: block;
+    height: 100vh;
+    overflow: auto;
 }
 
 .container{
@@ -7,7 +9,7 @@
     padding: 10px;
 }
 
-img{
+.poster-img{
     height: auto;
     width: auto;
 }
