@@ -12,6 +12,7 @@ import { MovieScrollService } from './moviescroll.service';
   styleUrls: ['./movies.component.scss'],
   providers: [MovieService],
 })
+
 export class MoviesComponent implements OnInit {
 
   ////Atts
@@ -58,20 +59,17 @@ export class MoviesComponent implements OnInit {
   }
 
   searchMovie() {
-    // this.movies = this.movieService.searchData(this.strSearch, this.type);
     return this.movieService.searchData(this.strSearch, this.type).subscribe(res=>{
       this.movies = res;
       setTimeout(() => {
         this.elementref.nativeElement.scrollTop = this.movieScrollService.scrollPosition;
       })
-      console.log("Scroll guardado de vuelta: ", this.movieScrollService.scrollPosition)
     })
   }
 
   @HostListener('scroll', ['$event'])
   onMovieScroll($event) {
     this.movieScrollService.scrollPosition = $event.srcElement.scrollTop;
-    console.log(this.movieScrollService.scrollPosition);
   }
 
 }

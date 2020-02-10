@@ -8,6 +8,8 @@ import { MoviesComponent } from './componentes/movies/movies.component';
 import { MovieDetailsComponent } from './componentes/movie-details/movie-details.component';
 //---------------------------------------------------------------------------------------------------
 import { HttpClientModule } from '@angular/common/http';
+//---------------------------------------------------------------------------------------------------
+
 
 
 @NgModule({

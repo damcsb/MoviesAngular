@@ -16,7 +16,14 @@
             <div class="moviecontent" [routerLink]="['/movie-details', m.imdbID]">
                 <img class="poster-img" [src]="m?.Poster">
                 <p>{{ m.Title }}</p>
+                <div class="images-class">
+                    <img src="https://www.materialui.co/materialIcons/av/movie_white_192x192.png" *ngIf="m.Type == 'movie'">
+                    <img src="https://i.imgur.com/nhycq4a.png" *ngIf="m.Type == 'series'">
+                    <img src="https://lh3.googleusercontent.com/proxy/fj6EPIRRV4uMcpknur9G9sceIhXlBp88WqB2ouSCANGmqA_IfoN-mIvLuHBPHDpjYMI7aexxllf_oNyG9FeBGa_hArjIzD_HbWP4whx6i8y_PLEAVw" *ngIf="m.Type == 'episode'">
+                    <img src="https://pluspng.com/img-png/game-png-black-and-white-this-free-icons-png-design-of-game-controller-outline-white-2-2400.png" *ngIf="m.Type == 'game'">
+                </div>
             </div>
+
             <hr>
         </li>
     </ul>
